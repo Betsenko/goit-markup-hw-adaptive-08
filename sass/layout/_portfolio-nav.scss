@@ -1,0 +1,23 @@
+.second-nav {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav {
+    display: flex;
+}
+
+.site-nav .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+
+.site-nav .menu {
+    display: block;
+    margin-right: 50px;
+}
+
+.site-nav .menu:last-child {
+    margin-right: 0px;
+}
