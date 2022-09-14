@@ -1,10 +1,43 @@
+.footer-section>.container {
+    
+    align-items: baseline;
+    text-align: center;
+    @media screen and (min-width:768px) {
+        flex-wrap: wrap;
+        display: flex;
+    }
+    @media screen and (min-width: 1200px) {
+        // width: 100%;
+        text-align:unset;
+    }
+   }
 
+.footer-container {
+    @media screen and (min-width:768px){
+    margin-right: 165px;
+    margin-left: 76px;
+    }
+    @media screen and (min-width: 1200px){
+        margin-right:0px;
+        margin-left:0px;
+    }
+   
+}
 
 .join-us {
-    margin-left: 70px;
+    // margin-left: 70px;
+    margin: auto;
     width: 206px;
     height: 80px;
 
+    @media screen and (min-width:768px) {
+    margin:0px;
+    height: 0px;
+    }
+    @media screen and (min-width: 1200px) {
+         margin-left: 70px;
+    }
+    
 }
 
 .join {
@@ -44,3 +77,4 @@
 .join-soc-web {
     fill: var(--primary-white-color)
 }
+

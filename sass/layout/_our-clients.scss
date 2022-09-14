@@ -1,20 +1,27 @@
 .our-clients {
-    padding: 60 0px;
-    @media screen and (min-wdth: 1200px) {
-    padding: 94px 0px;
-  }
-    
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+    padding-bottom: 94px;
+    }
 }
 
 .clients {
     margin-top: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    @media screen and (min-width: 1200px){
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
 }
 
 .client-icons {
@@ -30,14 +37,21 @@
     margin-bottom: 0px;
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
-    justify-content: center;
+     gap: 30px;
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+    }
 }
 
 .border-icons {
     height: 92px;
-    width: 170px;
-    margin-left: 30px;
+    width: calc((100% - 30px) / 2);
+        @media screen and (min-width: 768px) {
+        width: calc((100% - 60px) / 3);
+    }
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 90px) / 6);
+    }
 }
 
 .border {

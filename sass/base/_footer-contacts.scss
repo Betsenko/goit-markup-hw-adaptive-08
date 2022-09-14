@@ -38,6 +38,11 @@
     background: var(--second-color);
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media screen and (min-width:1200px){ 
+        padding-top:0px;
+        padding-bottom:0px; 
+    }
 }
 
 .logo-footer {
@@ -46,4 +51,23 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+}
+.footer__adress__phone {
+    margin-bottom: 60px;
+
+@media screen and (min-width:768px){
+    margin-bottom:0px;
+}
+@media screen and (min-width:1200px){
+    margin-bottom:0px;
+}
+}
+
+.footer-list {
+     padding-bottom:0px;
+
+    @media screen and (min-width:1200px){
+       margin-bottom: 0px;
+       padding-bottom: 60px;}
+       
 }

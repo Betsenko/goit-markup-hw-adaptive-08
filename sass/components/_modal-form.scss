@@ -87,15 +87,16 @@
     align-items: center;
     margin-top: 0px;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
+    font-size: 12px;
+    line-height: 1.6;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     &::before {
         content: "";
+        display: block;
         margin-right: 8px;
         width: 16px;
-        height: 15px;
+        height: 16px;
         border: 1px solid var(--title-text-color);
         border-radius: 2px;
     }
@@ -105,8 +106,8 @@
     margin-left: 5px;
     font-family: inherit;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.6;
     letter-spacing: 0.03em;
     text-decoration-line: underline;
     color: var(--accent-color);
@@ -123,3 +124,4 @@
         border-color: var(--accent-color);
     }
 }
+

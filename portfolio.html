@@ -27,10 +27,65 @@
         </ul>
       </nav>
       <ul class="contact-links list">
-        <li class="menu"><a href="mailto:info@devstudio.com" class="feedback"><svg class="envelop-icon" width="16" height="12">
+        <li class="menu-contact"><a href="mailto:info@devstudio.com" class="feedback"><svg class="envelop-icon" width="16" height="12">
             <use href="./images/sprite.svg#icon-envelope"></use></svg>info@devstudio.com</a></li>
         <li class="menu"><a href="tel:+380961111111" class="feedback"><svg class="smartphone-icon" width="10" height="16"><use href="./images/sprite.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a></li>
       </ul>
+      <!-- ADAPTIVE MOBILE MENU -->
+
+      <button type="button" class="menu-adaptive-open" data-menu-button>
+        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+        <use class="lines-botton" href="./images/sprite.svg#three-line"></use>
+        </svg>
+      </button>
+    </div>
+  <div class="mob-menu is-open" data-menu >
+      <div class="container">
+        <button type="button" class="menu-adaptive" data-menu-close >
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use class="cross-button" href="./images/sprite.svg#cross-button"></use>
+        </svg></button>
+      <div class="mob-menu-top">
+            
+          <nav class="mob-nav">
+            <ul class="mob-navigation list">
+              <li class="mob-menu-nav"><a href="./index.html" class="mob-link current">Студия</a></li>
+              <li class="mob-menu-nav"><a href="./portfolio.html" class="mob-link">Портфолио</a></li>
+              <li class="mob-menu-nav"><a href="" class="mob-link">Контакты</a></li>
+            </ul>  
+          </ul>
+          </nav>
+      </div>
+      <div class="mob-menu-bottom">
+                <ul class="mob-contact-links list">
+                  <li class="mob-menu-contact">
+                <a href="tel:+380961111111" class="mob-feedback"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob-menu-email">
+                <a href="mailto:info@devstudio.com" class="mob-email"
+                  >info@devstudio.com
+                </a>
+              </li>
+            <ul class="mob-soc-block list">
+              <li class="mob-soc"><a href="" class="mob-soc-list">Instagram</a>
+
+              </li>
+              <li class="mob-soc"><a href="" class="mob-soc-list">Twitter</a>
+
+              </li>
+              <li class="mob-soc"><a href="" class="mob-soc-list">Facebook</a>
+
+              </li>
+              <li class="mob-soc"><a href="" class="mob-soc-list">LinkedIn</a>
+
+              </li>
+            </ul>
+      </div>
+      </div>
+
+
     </div>
     </header>
     <main>
@@ -267,6 +322,13 @@
           </div>
           </div>
       </footer>
+      <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+     ></script>
+      <script src="./js/mobile-menu.js"></script>
     </main>
   </body>
 </html>

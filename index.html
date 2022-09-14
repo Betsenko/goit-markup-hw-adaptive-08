@@ -18,8 +18,10 @@
     />
     <!-- <link rel="stylesheet" href="./styles.css" /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
-  <body>
+   </head>
+   <body>
+    <!-- HEADER -->
+
     <header class="header">
       <div class="container main-nav">
         <a class="logo" href="./index.html">Web<span class="logo-studio">Studio</span></a>
@@ -31,7 +33,7 @@
           </ul>
         </nav>
         <ul class="contact-links list">
-          <li class="menu">
+          <li class="menu-contact">
             <a href="mailto:info@devstudio.com" class="feedback"
               ><svg class="envelop-icon" width="16" height="12">
                 <use href="./images/sprite.svg#icon-envelope"></use>
@@ -47,14 +49,73 @@
             >
           </li>
         </ul>
+        <!-- ADAPTIVE MOBILE MENU -->
+        <button type="button" class="menu-adaptive-open" data-menu-button>
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use class="lines-botton" href="./images/sprite.svg#three-line"></use>
+          </svg>
+        </button>
       </div>
-    </header>
+    <div class="mob-menu is-open" data-menu >
+        <div class="container">
+          <button type="button" class="menu-adaptive" data-menu-close >
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="cross-button" href="./images/sprite.svg#cross-button"></use>
+          </svg></button>
+        <div class="mob-menu-top">
+              
+            <nav class="mob-nav">
+              <ul class="mob-navigation list">
+                <li class="mob-menu-nav"><a href="" class="mob-link current">Студия</a></li>
+                <li class="mob-menu-nav"><a href="./portfolio.html" class="mob-link">Портфолио</a></li>
+                <li class="mob-menu-nav"><a href="" class="mob-link">Контакты</a></li>
+              </ul>  
+            </ul>
+            </nav>
+        </div>
+        <div class="mob-menu-bottom">
+                  <ul class="mob-contact-links list">
+                    <li class="mob-menu-contact">
+                  <a href="tel:+380961111111" class="mob-feedback"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+                <li class="mob-menu-email">
+                  <a href="mailto:info@devstudio.com" class="mob-email"
+                    >info@devstudio.com
+                  </a>
+                </li>
+              <ul class="mob-soc-block list">
+                <li class="mob-soc"><a href="" class="mob-soc-list">Instagram</a>
+
+                </li>
+                <li class="mob-soc"><a href="" class="mob-soc-list">Twitter</a>
+
+                </li>
+                <li class="mob-soc"><a href="" class="mob-soc-list">Facebook</a>
+
+                </li>
+                <li class="mob-soc"><a href="" class="mob-soc-list">LinkedIn</a>
+
+                </li>
+              </ul>
+        </div>
+        </div>
+      </div>
+        </header>
+ 
+ 
+  
+
+    <!-- HEADER END -->
+
+    <!-- HERO -->
 
     <main>
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения<br />для вашего бизнеса</h1>
-          <button type="button" class="button" data-modal-open >Заказать услугу</button>
+          <button type="button" class="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -327,6 +388,7 @@
           </ul>
         </div>
       </section>
+
       <section class="our-clients">
         <div class="container">
           <h2 class="clients">Постоянные клиенты</h2>
@@ -382,7 +444,9 @@
               <li class="email">
                 <a href="mailto:info@example.com" class="footer">info@example.com</a>
               </li>
-              <li><a href="tel:+380961111111" class="phone">+38 096 111 11 11</a></li>
+              <li class="footer__adress__phone">
+                <a href="tel:+380961111111" class="phone">+38 096 111 11 11</a>
+              </li>
             </ul>
           </address>
         </div>
@@ -418,20 +482,22 @@
         </div>
 
         <div class="subscribe-container">
-        <p class="mailing-list">подпишитесь на рассылку</p>
-        <form class="subscribe">
-          <label>
-            <input type="email" class="mailing-field" name="mail" placeholder="E-mail"/>
-          </label>
-          <button type="submit" class="button-sign">Подписаться
-          <svg class="telegram" width="24px" height="24px">
-            <use href="./images/sprite.svg#icon-paperfly-icon"></use>
-          </svg>
-        </button>
-        </form>
-      </div>
+          <p class="mailing-list">подпишитесь на рассылку</p>
+          <form class="subscribe">
+            <label>
+              <input type="email" class="mailing-field" name="mail" placeholder="E-mail" />
+            </label>
+            <button type="submit" class="button-sign">
+              Подписаться
+              <svg class="telegram" width="24px" height="24px">
+                <use href="./images/sprite.svg#icon-paperfly-icon"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <form class="form-field">
@@ -479,6 +545,14 @@
         </button>
       </div> 
     </div>
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+   ></script>
+   <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
-  </body>
-</html>
+   </body>
+    </html>
+
